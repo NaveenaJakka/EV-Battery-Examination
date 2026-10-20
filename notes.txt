@@ -1,0 +1,7 @@
+Notes:
+\n- Ensure dataset is named ev_battery.csv in project root or pass --csv path to scripts.
+\n- Typical target column names: 'failure', 'target', 'is_failed'. If different, edit model_training.choose_target().
+\n- After training, run API with uvicorn or build Docker image: 
+\n  docker build -t ev-batt-model .
+\n  docker run -p 8000:8000 ev-batt-model
+\n
